@@ -3,7 +3,7 @@ What Microsoft Playwright JS is and how it works
 * Node.js. npm -v node -v 
 * Updating Globally-Installed Packages npm update -g
 
-https://playwright.dev/ npm init playwright@latest
+* https://playwright.dev/ npm init playwright@latest
 
 Running the Example Test npx playwright test
 
