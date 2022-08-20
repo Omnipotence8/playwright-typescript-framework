@@ -109,9 +109,16 @@ https://playwright.dev/docs/test-configuration
 
 See the list of supported devices for emulation here: https://github.com/microsoft/playwright/blob/bdfe92f8a7499644c431c5c05de17d71e6006084/packages/playwright-core/src/server/deviceDescriptorsSource.json
 
-{
+   {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
     },
+
+![image](https://user-images.githubusercontent.com/45335405/185733869-71e8e9e9-3f2e-4aed-b1de-471550093e34.png)
+![image](https://user-images.githubusercontent.com/45335405/185733882-872303fb-21fd-4fb1-9b17-b0c4d83553fc.png)
+![image](https://user-images.githubusercontent.com/45335405/185733888-34f78ace-1e90-47b0-b85b-961b44047d7b.png)
+![image](https://user-images.githubusercontent.com/45335405/185733904-2a501cad-1bc3-4d4e-a8c1-c51c39063d75.png)
+![image](https://user-images.githubusercontent.com/45335405/185733915-2a5090fa-340a-44aa-860b-c900dce3aee6.png)
+
 
 
