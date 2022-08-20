@@ -89,6 +89,15 @@ If you wish to use the project on Unix based OS, you should set the value of cor
 
 If you wish to use the project under Windows only, the flag should be set to false.
 
+ ***Run Your Playwright test***
+ 
+By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
+To run test in visual mode add --headed.
+* npx playwright test --headed
 
+***View Playwright Test Report***
+We can view the reports of the last ran test case by using this command.
+
+* npx playwright show-report
 
 
