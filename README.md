@@ -1,23 +1,5 @@
 # playwright-typescript-framework
 What Microsoft Playwright JS is and how it works
-* Node.js. npm -v node -v 
-* Updating Globally-Installed Packages npm update -g
-
-* https://playwright.dev/ npm init playwright@latest
-
-Running the Example Test npx playwright test
-
-
-**!!! Fix**  "LF Will Be Replaced by CRLF Warning in Git"
-One way to fix the warning is to make changes in config files located in the path where git is installed. 
-The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
-
-ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
-
-If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
-
-If you wish to use the project under Windows only, the flag should be set to false.
-
 Playwright by Microsoft did start as a fork of Puppeteer. Puppeteer is a node library to automate the chromium browsers with the JavaScript API
 
 --Capabilities:
@@ -41,6 +23,71 @@ Playwright enables fast, reliable, and capable automation across all modern brow
 * Wide variety of selectors (locators) & shadow-dom support
 * Can handle single page application
 
--- Pre-requirements:
-1. Node JS
-2. VS Code Editor
+Like any other automation, tool playwright needs prerequisites and requirements before it can be run in an environment. 
+
+**System Requirements**
+The browser binaries work across three platforms Windows, macOS, and Linux.
+
+* Windows: Works perfectly fine with windows 10 or above or on the windows subsystem for Linux.
+* Mac OS: It needs 10.14 Mojave or above.
+* Linux: Depending on the version of Linux, additional dependencies are needed to run the browsers. Only Ubuntu 18.04 and 20.04 are officially supported.
+
+**Prerequisites**
+* Node JS: Playwright requires a node.js version that is 14 or above.
+* Visual Studio Code: This is the best IDE to work with Playwright. 
+
+* Node.js. npm -v node -v 
+* Updating Globally-Installed Packages npm update -g
+
+     ***Install and Setup New Playwright Project***
+
+* https://playwright.dev/ 
+
+npm init playwright@latest new-project
+Step 1: Go to the desired location and create a new folder where you want to set up the Playwright.
+
+Step 2: In the VS Code IDE, open the newly created folder, one way of opening it is, Go to File -> Open Folder.
+
+open existing playwright project in VS code
+
+Step 3: Open VS Code Terminal from Terminal -> New Terminal
+
+open visual studio code terminal
+
+Step 4: Open the terminal and type the below command to install playwright  
+
+$ npm init playwright@latest
+Here, @latest will install the latest stable release.
+
+Step 5: Press down arrow to Select JavaScript. By default TypeScript will be selected. Press Enter after selection.
+
+install playwright using terminal
+
+Step 6: Press Enter to put your tests in the tests folder
+
+? Where to put your end-to-end tests? › tests
+Step 7: Press y for GitHub basic setup
+
+? Add a GitHub Actions workflow? (y/N) › false
+It will start downloading browser binaries to your system. For Mac OS, it will install in ~/Library/Caches/ms-playwright directory
+
+Install playwright on Mac OS
+
+Once installation is done successfully. It will show a success message and suggest several commands, and a few files will be created on your system.
+
+Running the Example Test npx playwright test
+
+
+**!!! Fix**  "LF Will Be Replaced by CRLF Warning in Git"
+One way to fix the warning is to make changes in config files located in the path where git is installed. 
+The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
+
+ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
+
+If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
+
+If you wish to use the project under Windows only, the flag should be set to false.
+
+
+
+
