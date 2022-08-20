@@ -1,5 +1,6 @@
 # playwright-typescript-framework
-What Microsoft Playwright JS is and how it works
+What Microsoft Playwright JS is and how it works.
+
 Playwright by Microsoft did start as a fork of Puppeteer. Puppeteer is a node library to automate the chromium browsers with the JavaScript API
 
 --Capabilities:
