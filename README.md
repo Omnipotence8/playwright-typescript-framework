@@ -131,6 +131,14 @@ Granular Configuration:**france.spec.ts**
 https://aka.ms/playwright/fixtures
 ![image](https://user-images.githubusercontent.com/45335405/185734967-2c07886d-2cd0-46e3-adc5-1ad05531e912.png)
 
+**Configuration: Data-Driven Tests**
+
+![image](https://user-images.githubusercontent.com/45335405/185735332-54f6334c-56df-4f50-b42e-1abd85d0919f.png)
+
+   ***Reports***
+   ![image](https://user-images.githubusercontent.com/45335405/185735387-a35e9e66-3dba-43e1-8d88-3647e22db933.png)
+
+
 
 
 
