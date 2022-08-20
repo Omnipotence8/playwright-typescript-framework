@@ -45,26 +45,27 @@ The browser binaries work across three platforms Windows, macOS, and Linux.
 * https://playwright.dev/ 
 
 npm init playwright@latest new-project
-Step 1: Go to the desired location and create a new folder where you want to set up the Playwright.
 
-Step 2: In the VS Code IDE, open the newly created folder, one way of opening it is, Go to File -> Open Folder.
+**Step 1:** Go to the desired location and create a new folder where you want to set up the Playwright.
+
+**Step 2:** In the VS Code IDE, open the newly created folder, one way of opening it is, Go to File -> Open Folder.
 
 open existing playwright project in VS code
 
-Step 3: Open VS Code Terminal from Terminal -> New Terminal
+**Step 3:** Open VS Code Terminal from Terminal -> New Terminal
 
 open visual studio code terminal
 
-Step 4: Open the terminal and type the below command to install playwright  
+**Step 4:** Open the terminal and type the below command to install playwright  
 
 $ npm init playwright@latest
 Here, @latest will install the latest stable release.
 
-Step 5: Press down arrow to Select JavaScript. By default TypeScript will be selected. Press Enter after selection.
+**Step 5:** Press down arrow to Select JavaScript. By default TypeScript will be selected. Press Enter after selection.
 
 install playwright using terminal
 
-Step 6: Press Enter to put your tests in the tests folder
+**Step 6:** Press Enter to put your tests in the tests folder
 
 ? Where to put your end-to-end tests? › tests
 Step 7: Press y for GitHub basic setup
@@ -99,5 +100,18 @@ To run test in visual mode add --headed.
 We can view the reports of the last ran test case by using this command.
 
 * npx playwright show-report
+
+***Configuring Test Runs***
+The framework's getting started guide contains a standard configuration file.
+![image](https://user-images.githubusercontent.com/45335405/185723009-e7a68e91-a849-4f7b-b7a0-63d471c1d74b.png)
+
+https://playwright.dev/docs/test-configuration
+
+See the list of supported devices for emulation here: https://github.com/microsoft/playwright/blob/bdfe92f8a7499644c431c5c05de17d71e6006084/packages/playwright-core/src/server/deviceDescriptorsSource.json
+
+{
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
 
 
