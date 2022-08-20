@@ -127,6 +127,11 @@ Granular Configuration:**france.spec.ts**
 
 ![image](https://user-images.githubusercontent.com/45335405/185734543-88d88cfb-2143-4727-9d8d-f5e542e0080b.png)
 
+**Configuration Options**
+https://aka.ms/playwright/fixtures
+![image](https://user-images.githubusercontent.com/45335405/185734967-2c07886d-2cd0-46e3-adc5-1ad05531e912.png)
+
+
 
 
 
