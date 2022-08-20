@@ -120,5 +120,11 @@ See the list of supported devices for emulation here: https://github.com/microso
 ![image](https://user-images.githubusercontent.com/45335405/185733904-2a501cad-1bc3-4d4e-a8c1-c51c39063d75.png)
 ![image](https://user-images.githubusercontent.com/45335405/185733915-2a5090fa-340a-44aa-860b-c900dce3aee6.png)
 
+Granular Configuration:**france.spec.ts 
+●Per-file configuration 
+●Per-suite configuration
+![image](https://user-images.githubusercontent.com/45335405/185734543-88d88cfb-2143-4727-9d8d-f5e542e0080b.png)
+
+
 
 
