@@ -139,6 +139,9 @@ https://aka.ms/playwright/fixtures
    ![image](https://user-images.githubusercontent.com/45335405/185735387-a35e9e66-3dba-43e1-8d88-3647e22db933.png)
 
 **Env Variables**
+# install locally (recommended)
+**npm install dotenv --save**
+
 Vite uses dotenv to load additional environment variables from the following files in your environment directory:
 
 **.env**               # loaded in all cases
