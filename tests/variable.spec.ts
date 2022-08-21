@@ -1,11 +1,12 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import type { PlaywrightTestConfig } from '@playwright/test';
 import dotenv from 'dotenv';
+// import path from 'path';
 
-test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
+test('good example from Playwright ', async ({ page }) => {
   dotenv.config();
 
-// Alternatively, read from "../my.env" file.
+// // Alternatively, read from "../my.env" file.
 // dotenv.config({ path: path.resolve(__dirname, '..', 'my.env') });
 
 const config: PlaywrightTestConfig = {
