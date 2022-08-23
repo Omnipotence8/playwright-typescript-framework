@@ -1,5 +1,5 @@
 # playwright-typescript-framework
-What Microsoft Playwright JS is and how it works.
+What Microsoft Playwright is and how it works.
 
 Playwright by Microsoft did start as a fork of Puppeteer. Puppeteer is a node library to automate the chromium browsers with the JavaScript API
 
@@ -152,6 +152,10 @@ Vite uses dotenv to load additional environment variables from the following fil
   
 **.env.[mode].local**  # only loaded in specified mode, ignored by git
 ![image](https://user-images.githubusercontent.com/45335405/185778887-70fcfd45-68dd-4a5a-8173-68a302702f55.png)
+
+***Playwright API Testing***
+https://playwright.dev/docs/api/class-page#page-wait-for-response
+![image](https://user-images.githubusercontent.com/45335405/186271395-c01a9304-0cd5-4c12-b8d6-36eb5d29f44b.png)
 
 
 
