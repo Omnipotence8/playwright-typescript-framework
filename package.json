@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --headed"
+    "report": "npx playwright test --reporter=html && npx playwright show-report",
+    "debug": "npx playwright test --debug",
+    "test": "npx playwright test",
+    "test-us": "npx playwright test --update-snapshots",
+    "github-action": "npx playwright test --config=github.config.ts"
   },
   "keywords": [],
   "author": "Lyudmyla Kalmykova",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.25.0",
-    "dotenv": "^16.0.1"
-  },
-  "dependencies": {
-    "@types/node": "^18.7.8"
+    "@types/node": "^18.7.13",
+    "dotenv": "^16.0.1",
+    "playwright": "^1.25.1"
   }
 }
