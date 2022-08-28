@@ -11,12 +11,14 @@ test("Read API response", async ({ page }) => {
     await page.goto(`/users/${USER}`);
   
     const [response] = await Promise.all([
-        page.waitForResponse(res =>
-            res.status() == 200
+        page.waitForResponse(response =>
+            response.status() == 200
             &&
-            res.body().then(b => {
+            response.url() == "https://api.github.com/users/omnipotence8"
+            &&
+            response.body().then(b => {
                 console.log(b);
-                return b.includes("User")
+                return b.includes("Omnipotence8")
             })
         ),
     
