@@ -40,7 +40,7 @@ test('SEARCH RESULT analysis', async ({ page }) => {
 
 
 test('health and-fitness', async ({ page }) => {
-  await page.goto('https://grinfer.com/courses/health-and-fitness');
+  await page.goto(process.env.HEALTH_FITNESS);
   await page.locator('button:has-text("Sort by: Popular")').click();
   await page.locator('text=Date').click();
   await expect(page).toHaveURL('https://grinfer.com/courses/health-and-fitness?sort=createdAt&direction=DESC');
