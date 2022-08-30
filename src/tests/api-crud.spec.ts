@@ -1,38 +1,60 @@
 import { test, expect } from '@playwright/test';
+import dotenv from 'dotenv';
 
-const REPO = 'playwright-multiple-environment';
-const USER = 'omnipotence8';
+dotenv.config({
+  path:`.env.test`,
+  override: true
+ });
+ export const USER = process.env.USER;
+ export const REPO = process.env.REPO;
 
-test("Create an Incident", async ({ request }) => {
-  const _response = await request.post(`/repos/${USER}/${REPO}/issues`, {
+test.beforeAll(async ({ request }) => {
+  // Create a new repository
+  const response = await request.post('/user/repos', {
     data: {
-      title: '[NEW] report 1',
-      body: 'New Report description',
+      name: REPO
     }
   });
-  expect(_response.ok()).toBeTruthy();
+  console.log(response.body)
+  expect(response.ok()).toBeTruthy();
+});
+
+test('should create a bug report', async ({ request }) => {
+  const newIssue = await request.post(`/repos/${USER}/${REPO}/issues`, {
+    data: {
+      title: '[BUG]Begging you',
+      body: 'I beg you (the test) to run',
+    }
+  });
+  expect(newIssue.ok()).toBeTruthy();
 
   const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
   expect(issues.ok()).toBeTruthy();
   expect(await issues.json()).toContainEqual(expect.objectContaining({
-    title: '[NEW] report 1',
-    body: 'New Report description'
+    title: '[BUG]Begging you',
+    body: 'I beg you (the test) to run'
   }));
+});
 
-  test('should create a feature request', async ({ request }) => {
-    const newIssue = await request.post(`/repos/${USER}/${REPO}/issues`, {
-      data: {
-        title: '[Feature] request 1',
-        body: 'Feature description',
-      }
-    });
-    expect(newIssue.ok()).toBeTruthy();
-  
-    const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
-    expect(issues.ok()).toBeTruthy();
-    expect(await issues.json()).toContainEqual(expect.objectContaining({
-      title: '[Feature] request 1',
-      body: 'Feature description'
-    }));
+test('should create a feature request', async ({ request }) => {
+  const newIssue = await request.post(`/repos/${USER}/${REPO}/issues`, {
+    data: {
+      title: '[Feature] always and forever',
+      body: 'Feature works always and forever',
+    }
+  });
+  expect(newIssue.ok()).toBeTruthy();
+
+  const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
+  expect(issues.ok()).toBeTruthy();
+  expect(await issues.json()).toContainEqual(expect.objectContaining({
+    title: '[Feature] always and forever',
+    body: 'Feature works always and forever'
+  }))
+
+  test.afterAll(async ({ request }) => {
+    // Delete the repository
+    const response = await request.delete(`/repos/${USER}/${REPO}`);
+    expect(response.ok()).toBeTruthy();
   });
 });

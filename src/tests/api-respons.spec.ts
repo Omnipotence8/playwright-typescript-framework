@@ -1,16 +1,22 @@
-import { test } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 import dotenv from 'dotenv';
 
 dotenv.config({
-  path:`.env.test`,
-  override: true
+ path:`.env.test`,
+ override: true
 });
-const USER = 'omnipotence8';
+export const USER = process.env.USER;
+
+test('Get', async ({ request }) => {
+    const response = await request.get('https://api.github.com/users/omnipotence8', {});
+    console.log(await response.json());
+    expect(response.status()).toBe(200);
+  });
 
 test("Read API response", async ({ page }) => {
-    await page.goto(`/users/${USER}`);
+     await page.goto(`/users/${USER}`);
   
-    const [response] = await Promise.all([
+     const [response] = await Promise.all([
         page.waitForResponse(response =>
             response.status() == 200
             &&
@@ -26,4 +32,4 @@ test("Read API response", async ({ page }) => {
     
     console.log('RESPONSE ' + (await response.body()));
 
-})
+ })
