@@ -92,11 +92,11 @@ If you wish to use the project under Windows only, the flag should be set to fal
 
 ***Specifying dependencies and devDependencies in a package.json file***
 
-*"dependencies": Packages required by your application in production. 
+*"dependencies": Packages required by your application in production.
+  *npm install <package-name> [--save-prod]
+    
 *"devDependencies": Packages that are only needed for local development and testing.
-
-*npm install <package-name> [--save-prod]
-*npm install <package-name> --save-dev
+  *npm install <package-name> --save-dev
 
 
  ***Run Your Playwright test***
