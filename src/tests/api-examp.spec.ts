@@ -33,8 +33,8 @@ test('can GET a REST API and check response using approval style', async ({ requ
   test('can POST a REST API and check response using assertion style (using page)', async ({ page }) => {
     const response = await page.request.post('https://my-json-server.typicode.com/webdriverjsdemo/webdriverjsdemo.github.io/posts', { 
         data: { 
-            title: 'Post 4' } 
-        })
+            title: 'Post 4' 
+        } })
     expect(response.status()).toBe(201)
     const body = JSON.parse(await response.text())
     expect(body.id).toBe(4)

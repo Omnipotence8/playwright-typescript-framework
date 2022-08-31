@@ -2,5 +2,6 @@ node_modules/
 /test-results/
 /playwright-report/
 /playwright/.cache/
+.env
 .env.test
-new.spec.ts
+/src/tests/new.spec.ts

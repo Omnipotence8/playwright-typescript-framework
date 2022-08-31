@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
         extraHTTPHeaders: {
            'Accept': 'application/vnd.github.v3+json',
             // 'Authorization': `token ${process.env.API_TOKEN}`,
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer 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",
         },
   },
 

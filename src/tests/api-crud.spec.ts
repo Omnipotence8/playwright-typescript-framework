@@ -15,8 +15,8 @@ test.beforeAll(async ({ request }) => {
       name: REPO
     }
   });
-  console.log(response.body)
-  expect(response.ok()).toBeTruthy();
+console.log(response.body)
+expect(response.ok()).toBeTruthy();
 });
 
 test('should create a bug report', async ({ request }) => {
@@ -29,13 +29,12 @@ test('should create a bug report', async ({ request }) => {
   expect(newIssue.ok()).toBeTruthy();
 
   const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
-  expect(issues.ok()).toBeTruthy();
+  // expect(issues.ok()).toBeTruthy();
   expect(await issues.json()).toContainEqual(expect.objectContaining({
     title: '[BUG]Begging you',
     body: 'I beg you (the test) to run'
   }));
 });
-
 test('should create a feature request', async ({ request }) => {
   const newIssue = await request.post(`/repos/${USER}/${REPO}/issues`, {
     data: {
@@ -46,15 +45,13 @@ test('should create a feature request', async ({ request }) => {
   expect(newIssue.ok()).toBeTruthy();
 
   const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
-  expect(issues.ok()).toBeTruthy();
+  // expect(issues.ok()).toBeTruthy();
   expect(await issues.json()).toContainEqual(expect.objectContaining({
     title: '[Feature] always and forever',
     body: 'Feature works always and forever'
   }))
-
-  test.afterAll(async ({ request }) => {
-    // Delete the repository
-    const response = await request.delete(`/repos/${USER}/${REPO}`);
-    expect(response.ok()).toBeTruthy();
-  });
+});
+test.afterAll(async ({ request }) => {
+  const response = await request.delete(`/repos/${USER}/${REPO}`);
+  expect(response.ok()).toBeTruthy();
 });
