@@ -90,6 +90,15 @@ If you wish to use the project on Unix based OS, you should set the value of cor
 
 If you wish to use the project under Windows only, the flag should be set to false.
 
+***Specifying dependencies and devDependencies in a package.json file***
+
+"dependencies": Packages required by your application in production.
+"devDependencies": Packages that are only needed for local development and testing.
+
+npm install <package-name> [--save-prod]
+npm install <package-name> --save-dev
+
+
  ***Run Your Playwright test***
  
 By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
