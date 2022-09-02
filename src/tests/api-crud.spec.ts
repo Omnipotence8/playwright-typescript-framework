@@ -29,7 +29,7 @@ test('should create a bug report', async ({ request }) => {
   expect(newIssue.ok()).toBeTruthy();
 
   const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
-  // expect(issues.ok()).toBeTruthy();
+  expect(issues.ok()).toBeTruthy();
   expect(await issues.json()).toContainEqual(expect.objectContaining({
     title: '[BUG]Begging you',
     body: 'I beg you (the test) to run'
@@ -45,7 +45,7 @@ test('should create a feature request', async ({ request }) => {
   expect(newIssue.ok()).toBeTruthy();
 
   const issues = await request.get(`/repos/${USER}/${REPO}/issues`);
-  // expect(issues.ok()).toBeTruthy();
+  expect(issues.ok()).toBeTruthy();
   expect(await issues.json()).toContainEqual(expect.objectContaining({
     title: '[Feature] always and forever',
     body: 'Feature works always and forever'
