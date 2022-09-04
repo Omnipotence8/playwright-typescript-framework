@@ -79,24 +79,6 @@ Once installation is done successfully. It will show a success message and sugge
 
 Running the Example Test npx playwright test
 
-## Frequently occurring problems and their solutions.
-
-1) **"LF Will Be Replaced by CRLF Warning in Git"**
-One way to fix the warning is to make changes in config files located in the path where git is installed. 
-The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
-
-ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
-
-If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
-
-If you wish to use the project under Windows only, the flag should be set to false.
-
-2) **Node / Express: EADDRINUSE, Address already in use - Kill server**
-![image](https://user-images.githubusercontent.com/45335405/188330684-31610a52-3938-4ca1-b068-76452c781a64.png)
-
-C:\Windows\System32>taskkill /F /IM node.exe
-SUCCESS: The process "node.exe" with PID 11008 has been terminated.
-
 ***Specifying dependencies and devDependencies in a package.json file***
 
 *"dependencies": Packages required by your application in production.
@@ -116,6 +98,25 @@ To run test in visual mode add --headed.
 We can view the reports of the last ran test case by using this command.
 
 * npx playwright show-report
+
+## Frequently occurring problems and their solutions.
+
+1) **"LF Will Be Replaced by CRLF Warning in Git"**
+One way to fix the warning is to make changes in config files located in the path where git is installed. 
+The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
+
+ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
+
+If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
+
+If you wish to use the project under Windows only, the flag should be set to false.
+
+2) **Node / Express: EADDRINUSE, Address already in use - Kill server**
+![image](https://user-images.githubusercontent.com/45335405/188330684-31610a52-3938-4ca1-b068-76452c781a64.png)
+
+C:\Windows\System32>taskkill /F /IM node.exe
+SUCCESS: The process "node.exe" with PID 11008 has been terminated.
+
 
 ***Configuring Test Runs***
 The framework's getting started guide contains a standard configuration file.
