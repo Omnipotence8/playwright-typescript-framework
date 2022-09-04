@@ -79,9 +79,9 @@ Once installation is done successfully. It will show a success message and sugge
 
 Running the Example Test npx playwright test
 
-      ***Frequently occurring problems and their solutions***
+## Frequently occurring problems and their solutions.
 
-1) **!!! Fix**  "LF Will Be Replaced by CRLF Warning in Git"
+1) **"LF Will Be Replaced by CRLF Warning in Git"**
 One way to fix the warning is to make changes in config files located in the path where git is installed. 
 The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
 
