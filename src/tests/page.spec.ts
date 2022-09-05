@@ -23,13 +23,13 @@ test('homepage analysis', async ({ page }) => {
   await page.goto('/');
   await expect(page).toHaveTitle(/Grinfer/);
   await page.locator('[placeholder="What do you want to learn today\\?"]').click();
-  await page.locator('[placeholder="What do you want to learn today\\?"]').fill(process.env.SEARCH);
+  await page.locator('[placeholder="What do you want to learn today\\?"]').fill("" + process.env.SEARCH);
   await page.locator('text=Search').click();
-  await expect(page).toHaveURL(process.env.SEARCH_RESULT);
+  await expect(page).toHaveURL("" + process.env.SEARCH_RESULT);
 });
 
 test('SEARCH RESULT analysis', async ({ page }) => {
-  await page.goto(process.env.SEARCH_RESULT);
+  await page.goto("" + process.env.SEARCH_RESULT);
   await page.locator('button:has-text("Topic")').click();
   await page.locator('text=Lifestyle').first().click();
   await expect(page).toHaveURL('https://grinfer.com/search?page=1&query=courses%20for%20me&categories=8c7ed4fd-2963-4e17-9073-735e1bdb3822');
@@ -40,7 +40,7 @@ test('SEARCH RESULT analysis', async ({ page }) => {
 
 
 test('health and-fitness', async ({ page }) => {
-  await page.goto(process.env.HEALTH_FITNESS);
+  await page.goto("" + process.env.HEALTH_FITNESS);
   await page.locator('button:has-text("Sort by: Popular")').click();
   await page.locator('text=Date').click();
   await expect(page).toHaveURL('https://grinfer.com/courses/health-and-fitness?sort=createdAt&direction=DESC');
@@ -60,8 +60,8 @@ test('LogIn from .env.test', async ({ page }) => {
   await expect(getStarted).toHaveAttribute('href', '/sign-in');
   await getStarted.click();
   await expect(page).toHaveURL(/.*sign-in/);
-  await page.locator('#email').fill(process.env.USERNAME);
-  await page.locator('#password').fill(process.env.PASSWORD);
+  await page.locator('#email').fill("" + process.env.USERNAME);
+  await page.locator('#password').fill("" + process.env.PASSWORD);
   await page.locator('.sc-p4qn9p-0.guvpYR').click();
   await expect(page).toHaveURL(/.*subscription/);
 });
