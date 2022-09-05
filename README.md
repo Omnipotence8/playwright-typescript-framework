@@ -79,16 +79,14 @@ Once installation is done successfully. It will show a success message and sugge
 
 Running the Example Test npx playwright test
 
+***Specifying dependencies and devDependencies in a package.json file***
 
-**!!! Fix**  "LF Will Be Replaced by CRLF Warning in Git"
-One way to fix the warning is to make changes in config files located in the path where git is installed. 
-The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
+*"dependencies": Packages required by your application in production.
+  **npm install <package-name> [--save-prod]**
+    
+*"devDependencies": Packages that are only needed for local development and testing.
+  **npm install <package-name> --save-dev**
 
-ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
-
-If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
-
-If you wish to use the project under Windows only, the flag should be set to false.
 
  ***Run Your Playwright test***
  
@@ -100,6 +98,25 @@ To run test in visual mode add --headed.
 We can view the reports of the last ran test case by using this command.
 
 * npx playwright show-report
+
+## Frequently occurring problems and their solutions.
+
+1) **"LF Will Be Replaced by CRLF Warning in Git"**
+One way to fix the warning is to make changes in config files located in the path where git is installed. 
+The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
+
+ProgramFiles\git\etc\gitconfig and in /etc/gitconfig in Linux/Unix based operating systems. However, we can fix the issue in different situations:
+
+If you wish to use the project on Unix based OS, you should set the value of core.autocrlf to true
+
+If you wish to use the project under Windows only, the flag should be set to false.
+
+2) **Node / Express: EADDRINUSE, Address already in use - Kill server**
+![image](https://user-images.githubusercontent.com/45335405/188330684-31610a52-3938-4ca1-b068-76452c781a64.png)
+
+C:\Windows\System32>taskkill /F /IM node.exe
+SUCCESS: The process "node.exe" with PID 11008 has been terminated.
+
 
 ***Configuring Test Runs***
 The framework's getting started guide contains a standard configuration file.
@@ -157,6 +174,17 @@ Vite uses dotenv to load additional environment variables from the following fil
 https://playwright.dev/docs/api/class-page#page-wait-for-response
 ![image](https://user-images.githubusercontent.com/45335405/186271395-c01a9304-0cd5-4c12-b8d6-36eb5d29f44b.png)
 
+***toBe(true) vs toBeTruthy() vs toBeTrue()***
+toBe(<value>) - The returned value is the same as <value>
 
+toBeTrue() - Checks if the returned value is true
+
+toBeTruthy() - Check if the value, when cast to a boolean, will be a truthy value
+
+Truthy values are all values that aren't 0, '' (empty string), false, null, NaN, undefined or [] (empty array)*.
+
+* Notice that when you run !![], it returns true, but when you run [] == false it also returns true. It depends on how it is implemented. In other words: (!![]) === ([] == false)
+    
+![image](https://user-images.githubusercontent.com/45335405/188291489-b8ad86dd-5d39-4db3-bbce-d433cba01850.png)
 
 
