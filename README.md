@@ -1,5 +1,5 @@
 # playwright-typescript-framework
-What Microsoft Playwright JS is and how it works.
+What Microsoft Playwright is and how it works.
 
 Playwright by Microsoft did start as a fork of Puppeteer. Puppeteer is a node library to automate the chromium browsers with the JavaScript API
 
@@ -68,7 +68,8 @@ install playwright using terminal
 **Step 6:** Press Enter to put your tests in the tests folder
 
 ? Where to put your end-to-end tests? › tests
-Step 7: Press y for GitHub basic setup
+
+**Step 7:** Press y for GitHub basic setup
 
 ? Add a GitHub Actions workflow? (y/N) › false
 It will start downloading browser binaries to your system. For Mac OS, it will install in ~/Library/Caches/ms-playwright directory
@@ -79,8 +80,37 @@ Once installation is done successfully. It will show a success message and sugge
 
 Running the Example Test npx playwright test
 
+***Specifying dependencies and devDependencies in a package.json file***
 
-**!!! Fix**  "LF Will Be Replaced by CRLF Warning in Git"
+*"dependencies": Packages required by your application in production.
+  **npm install <package-name> [--save-prod]**
+    
+*"devDependencies": Packages that are only needed for local development and testing.
+  **npm install <package-name> --save-dev**
+
+
+## Run Your Playwright test
+ 
+By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
+Running all tests
+
+**npx playwright test**
+
+Running a single test file
+
+**npx playwright test landing-page.spec.ts**   
+    
+To run test in visual mode add --headed.
+** npx playwright test --headed
+
+***View Playwright Test Report***
+We can view the reports of the last ran test case by using this command.
+
+* npx playwright show-report
+
+## Frequently occurring problems and their solutions.
+
+1) **"LF Will Be Replaced by CRLF Warning in Git"**
 One way to fix the warning is to make changes in config files located in the path where git is installed. 
 The value of code.autocrlf is stored in gitconfig file located at %ProgramFiles(x86)%\git\etc\gitconfig or
 
@@ -90,16 +120,12 @@ If you wish to use the project on Unix based OS, you should set the value of cor
 
 If you wish to use the project under Windows only, the flag should be set to false.
 
- ***Run Your Playwright test***
- 
-By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
-To run test in visual mode add --headed.
-* npx playwright test --headed
+2) **Node / Express: EADDRINUSE, Address already in use - Kill server**
+![image](https://user-images.githubusercontent.com/45335405/188330684-31610a52-3938-4ca1-b068-76452c781a64.png)
 
-***View Playwright Test Report***
-We can view the reports of the last ran test case by using this command.
+C:\Windows\System32>taskkill /F /IM node.exe
+SUCCESS: The process "node.exe" with PID 11008 has been terminated.
 
-* npx playwright show-report
 
 ***Configuring Test Runs***
 The framework's getting started guide contains a standard configuration file.
@@ -138,8 +164,8 @@ https://aka.ms/playwright/fixtures
    ***Reports***
    ![image](https://user-images.githubusercontent.com/45335405/185735387-a35e9e66-3dba-43e1-8d88-3647e22db933.png)
 
-**Env Variables**
-# install locally (recommended)
+# Env Variables
+ install locally (recommended)
 **npm install dotenv --save**
 
 Vite uses dotenv to load additional environment variables from the following files in your environment directory:
@@ -153,6 +179,21 @@ Vite uses dotenv to load additional environment variables from the following fil
 **.env.[mode].local**  # only loaded in specified mode, ignored by git
 ![image](https://user-images.githubusercontent.com/45335405/185778887-70fcfd45-68dd-4a5a-8173-68a302702f55.png)
 
+***Playwright API Testing***
+https://playwright.dev/docs/api/class-page#page-wait-for-response
+![image](https://user-images.githubusercontent.com/45335405/186271395-c01a9304-0cd5-4c12-b8d6-36eb5d29f44b.png)
 
+***toBe(true) vs toBeTruthy() vs toBeTrue()***
+toBe(<value>) - The returned value is the same as <value>
+
+toBeTrue() - Checks if the returned value is true
+
+toBeTruthy() - Check if the value, when cast to a boolean, will be a truthy value
+
+Truthy values are all values that aren't 0, '' (empty string), false, null, NaN, undefined or [] (empty array)*.
+
+* Notice that when you run !![], it returns true, but when you run [] == false it also returns true. It depends on how it is implemented. In other words: (!![]) === ([] == false)
+    
+![image](https://user-images.githubusercontent.com/45335405/188291489-b8ad86dd-5d39-4db3-bbce-d433cba01850.png)
 
 
