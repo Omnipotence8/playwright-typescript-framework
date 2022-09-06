@@ -197,5 +197,3 @@ Truthy values are all values that aren't 0, '' (empty string), false, null, NaN,
 ![image](https://user-images.githubusercontent.com/45335405/188291489-b8ad86dd-5d39-4db3-bbce-d433cba01850.png)
 
 
-
-
