@@ -93,14 +93,14 @@ Running the Example Test npx playwright test
 By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
 Running all tests
 
-npx playwright test
+**npx playwright test**
 
 Running a single test file
 
-npx playwright test landing-page.spec.ts   
+**npx playwright test landing-page.spec.ts**   
     
 To run test in visual mode add --headed.
-* npx playwright test --headed
+** npx playwright test --headed
 
 ***View Playwright Test Report***
 We can view the reports of the last ran test case by using this command.
