@@ -3,7 +3,7 @@ import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: './src/tests',
-  
+
   use: {
     
     actionTimeout: 0,
