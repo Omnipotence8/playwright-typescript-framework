@@ -68,7 +68,8 @@ install playwright using terminal
 **Step 6:** Press Enter to put your tests in the tests folder
 
 ? Where to put your end-to-end tests? › tests
-Step 7: Press y for GitHub basic setup
+
+**Step 7:** Press y for GitHub basic setup
 
 ? Add a GitHub Actions workflow? (y/N) › false
 It will start downloading browser binaries to your system. For Mac OS, it will install in ~/Library/Caches/ms-playwright directory
@@ -88,11 +89,19 @@ Running the Example Test npx playwright test
   **npm install <package-name> --save-dev**
 
 
- ***Run Your Playwright test***
+## Run Your Playwright test
  
 By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
+Running all tests
+
+**npx playwright test**
+
+Running a single test file
+
+**npx playwright test landing-page.spec.ts**   
+    
 To run test in visual mode add --headed.
-* npx playwright test --headed
+** npx playwright test --headed
 
 ***View Playwright Test Report***
 We can view the reports of the last ran test case by using this command.
@@ -155,8 +164,8 @@ https://aka.ms/playwright/fixtures
    ***Reports***
    ![image](https://user-images.githubusercontent.com/45335405/185735387-a35e9e66-3dba-43e1-8d88-3647e22db933.png)
 
-**Env Variables**
-# install locally (recommended)
+# Env Variables
+ install locally (recommended)
 **npm install dotenv --save**
 
 Vite uses dotenv to load additional environment variables from the following files in your environment directory:
