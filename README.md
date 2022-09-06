@@ -68,7 +68,8 @@ install playwright using terminal
 **Step 6:** Press Enter to put your tests in the tests folder
 
 ? Where to put your end-to-end tests? › tests
-Step 7: Press y for GitHub basic setup
+
+**Step 7:** Press y for GitHub basic setup
 
 ? Add a GitHub Actions workflow? (y/N) › false
 It will start downloading browser binaries to your system. For Mac OS, it will install in ~/Library/Caches/ms-playwright directory
@@ -88,7 +89,7 @@ Running the Example Test npx playwright test
   **npm install <package-name> --save-dev**
 
 
- ***Run Your Playwright test***
+## Run Your Playwright test
  
 By default Playwright test runs in headless mode for 3 browsers chromium, firefox and webkit.
 Running all tests
