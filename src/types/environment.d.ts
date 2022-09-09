@@ -11,6 +11,9 @@ declare global {
       SEARCH: string; 
       SEARCH_RESULT: string;
       HEALTH_FITNESS: string;
+      URL: string;
+      URLsingup: string; 
+      URLLAMBDA: string;
     }
   }
 }

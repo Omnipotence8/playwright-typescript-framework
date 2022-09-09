@@ -2,11 +2,12 @@ import { test, expect } from '@playwright/test';
 import dotenv from 'dotenv';
 
 dotenv.config({
-  path:`.env.test`,
+  path: `.env.test`,
   override: true
- });
- export const USER = process.env.USER;
- export const REPO = process.env.REPO;
+});
+export const USER = process.env.USER;
+export const REPO = process.env.REPO;
+export const API_TOKEN = process.env.API_TOKEN;
 
 test.beforeAll(async ({ request }) => {
   // Create a new repository
@@ -15,8 +16,8 @@ test.beforeAll(async ({ request }) => {
       name: REPO
     }
   });
-console.log(response.body)
-expect(response.ok()).toBeTruthy();
+  console.log(response.body)
+  expect(response.ok()).toBeTruthy();
 });
 
 test('should create a bug report', async ({ request }) => {

@@ -1,7 +1,12 @@
 import { expect, test } from "@playwright/test";
+import dotenv from 'dotenv';
+dotenv.config({
+  path:`.env.test`,
+  override: true
+});
 
 test("login test demo", async ({ page }) => {
-  await page.goto("https://ecommerce-playground.lambdatest.io/");
+  await page.goto("" + process.env.URLLAMBDA);
   await page.hover(
     "//a[@data-toggle='dropdown']//span[contains(.,'My account')]"
   );
@@ -10,12 +15,12 @@ test("login test demo", async ({ page }) => {
   await page.fill("input[name='email']", "koushik350@gmail.com");
   await page.fill("input[name='password']", "Pass123$");
   await page.click("input[value='Login']");
-  await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
+  await expect(page).toHaveURL(/.*account/);
 })
 
 test("Empty input", async ({ page }) => {
 
-  await page.goto("https://ecommerce-playground.lambdatest.io/");
+  await page.goto("" + process.env.URLLAMBDA);
   await page.hover(
     "//a[@data-toggle='dropdown']//span[contains(.,'My account')]"
   );
@@ -33,7 +38,7 @@ test("Empty input", async ({ page }) => {
 
 test("Wrong password", async ({ page }) => {
 
-  await page.goto("https://ecommerce-playground.lambdatest.io/");
+  await page.goto("" + process.env.URLLAMBDA);
   await page.hover(
     "//a[@data-toggle='dropdown']//span[contains(.,'My account')]"
   );
@@ -51,7 +56,7 @@ test("Wrong password", async ({ page }) => {
 
 test("Wrong email", async ({ page }) => {
 
-  await page.goto("https://ecommerce-playground.lambdatest.io/");
+  await page.goto("" + process.env.URLLAMBDA);
   await page.hover(
     "//a[@data-toggle='dropdown']//span[contains(.,'My account')]"
   );
