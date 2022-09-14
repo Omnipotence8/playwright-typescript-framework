@@ -7,7 +7,7 @@ const email = "MilaKamila@mailinator.com";
 const password = "MilaKamila@123";
 test.describe("Page object test demo", async () => {
 
-    test("Add to cart test_03", async ({ page, baseURL }) => {
+    test("Add to cart test", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
         const homePage = new HomePage(page);
         const special = new SpecialHotPage(page);
