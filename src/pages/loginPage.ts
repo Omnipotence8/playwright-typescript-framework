@@ -1,4 +1,10 @@
-import { Page } from "@playwright/test";
+import { Page,expect } from "@playwright/test";
+
+const LocatEmail = "input[name='email']";
+const LocatPassword = "input[name='password']";
+const LocatLoginBtn = "input[value='Login']";
+const LocatWarning = "//div[contains(@class,'alert alert-danger')]";
+
 export default class LoginPage {
 
     constructor(public page: Page) { }
@@ -10,19 +16,30 @@ export default class LoginPage {
     }
 
     async enterEmail(emailaddress: string) {
-        await this.page.locator("input[name='email']")
+        await this.page.locator(LocatEmail)
             .type(emailaddress);
     }
 
     async enterLoginPassword(password: string) {
-        await this.page.locator("input[name='password']")
+        await this.page.locator(LocatPassword)
             .type(password);
     }
 
     async clickLoginBtn() {
         await Promise.all([
             this.page.waitForNavigation(),
-            this.page.click("input[value='Login']")
+            this.page.click(LocatLoginBtn)
         ])
     }
+
+    async Warning() {
+        expect(this.page.locator(LocatWarning))
+        .toContainText("Warning: No match for E-Mail Address and/or Password.");
+    }
+
+    async Warning1() {
+        expect(this.page.locator(LocatWarning))
+        .toContainText("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
+    }
+
 }

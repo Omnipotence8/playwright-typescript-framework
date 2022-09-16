@@ -1,8 +1,12 @@
 import { expect, test } from "@playwright/test";
 import LoginPage from "../pages/loginPage";
-
-const email = "MilaKamila@mailinator.com";
-const password = "MilaKamila@123";
+import dotenv from 'dotenv';
+dotenv.config({
+  path:`.env.test`,
+  override: true
+});
+export const email = process.env.POM_EMAIL;
+export const password = process.env.POM_PASSWORD;
 test.describe("Page object test for Login", async () => {
 
     test("Correct Login", async ({ page, baseURL }) => {
@@ -19,7 +23,7 @@ test.describe("Page object test for Login", async () => {
         await page.goto(`${baseURL}route=account/login`);
         await login.enterLoginPassword(password);
         await login.clickLoginBtn();
-        expect(page.locator("//div[contains(@class,'alert alert-danger')]")).toContainText("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
+        await login.Warning1();
     })
 
     test("Without password Login", async ({ page, baseURL }) => {
@@ -27,6 +31,6 @@ test.describe("Page object test for Login", async () => {
         await page.goto(`${baseURL}route=account/login`);
         await login.enterEmail(email);
         await login.clickLoginBtn();
-        expect(page.locator("//div[contains(@class,'alert alert-danger')]")).toContainText("Warning: No match for E-Mail Address and/or Password.");
+        await login.Warning();
     })
 })
