@@ -2,9 +2,14 @@ import { expect, test } from "@playwright/test";
 import LoginPage from "../pages/loginPage";
 import HomePage from "../pages/homePage";
 import SpecialHotPage from "../pages/specialHotPage";
+import dotenv from 'dotenv';
+dotenv.config({
+  path:`.env.test`,
+  override: true
+});
+export const email = process.env.POM_EMAIL;
+export const password = process.env.POM_PASSWORD;
 
-const email = "MilaKamila@mailinator.com";
-const password = "MilaKamila@123";
 test.describe("Page object test demo", async () => {
 
     test("Add to cart test", async ({ page, baseURL }) => {

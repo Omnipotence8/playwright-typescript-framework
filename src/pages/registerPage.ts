@@ -10,6 +10,7 @@ const LocatCheck = "#input-newsletter-no";
 const LocatPrivacy = "//label[@for='input-agree']";
 const LocatContinue = "input[value='Continue']";
 
+const LocatWithoutDangers = ".text-danger";
 const LocatDangerFirstName = "//input[@name='firstname']/following-sibling::div[1]";
 const LocatDangerLastName = "//input[@name='lastname']/following-sibling::div[1]";
 const LocatDangerEmail = "//input[@name='email']/following-sibling::div[1]";
@@ -63,6 +64,10 @@ export default class RegisterPage {
             this.page.waitForNavigation({waitUntil:"networkidle"}),
             this.page.click(LocatContinue)
         ])
+    }
+
+    async WithoutDangers() { 
+        await expect(this.page.locator (LocatWithoutDangers)).not.toBeVisible();
     }
 
     async TextDangerFirstName() { 

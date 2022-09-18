@@ -47,8 +47,7 @@ test.describe("Page object test for Success Register Account", async () => {
         expect(register.isSubscribeChecked()).toBeChecked();
         await register.clickTermandConditon();
         await register.clickContinueToRegister();
-        const locator = page.locator('.text-danger');
-        await expect(locator).not.toBeVisible();
+        await register.WithoutDangers();
         console.log('STATUS: ' + testInfo.status);
 
     })
