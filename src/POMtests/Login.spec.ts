@@ -23,7 +23,7 @@ test.describe("Page object test for Login", async () => {
         await page.goto(`${baseURL}route=account/login`);
         await login.enterLoginPassword(password);
         await login.clickLoginBtn();
-        await login.Warning1();
+        await login.WarningSecond();
     })
 
     test("Without password Login", async ({ page, baseURL }) => {
