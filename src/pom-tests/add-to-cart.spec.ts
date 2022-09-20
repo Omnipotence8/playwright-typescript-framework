@@ -12,11 +12,11 @@ export const password = process.env.POM_PASSWORD;
 
 test.describe("Page object test demo", async () => {
 
-    test("Add to cart test", async ({ page, baseURL }) => {
+    test("Add to cart test", async ({ page}) => {
         const login = new LoginPage(page);
         const homePage = new HomePage(page);
         const special = new SpecialHotPage(page);
-        await page.goto(`${baseURL}route=account/login`);
+        await page.goto(`?route=account/login`);
         await login.login(email, password);
         await homePage.clickOnSpecialHotMenu();
         await special.addFirstProductToTheCart();

@@ -32,14 +32,7 @@ export default class LoginPage {
         ])
     }
 
-    async Warning() {
-        expect(this.page.locator(LocatWarning))
-        .toContainText("Warning: No match for E-Mail Address and/or Password.");
+    async warning(warningText:string) {
+        expect(this.page.locator(LocatWarning)).toContainText(warningText);
     }
-
-    async WarningSecond() {
-        expect(this.page.locator(LocatWarning))
-        .toContainText("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
-    }
-
 }

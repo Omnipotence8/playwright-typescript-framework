@@ -14,11 +14,11 @@ export const phone = process.env.TELEPHONE;
 
 test.describe("Page object test for Success Register Account", async () => {
 
-    test("Correct Register Account", async ({ page, baseURL }, testInfo) => {
+    test("Correct Register Account", async ({ page }, testInfo) => {
         console.log('TITLE: ' + testInfo.title);
 
         const register = new RegisterPage(page);
-        await page.goto(`${baseURL}route=account/register`);
+        await page.goto(`?route=account/register`);
         await register.enterFirstName(name);
         await register.enterLastName(lastname);
         await register.enterEmail(email);
@@ -33,11 +33,11 @@ test.describe("Page object test for Success Register Account", async () => {
         console.log('STATUS: ' + testInfo.status);
     })
 
-    test("32 characters Register Account", async ({ page, baseURL }, testInfo) => {
+    test("32 characters Register Account", async ({ page }, testInfo) => {
         console.log('TITLE: ' + testInfo.title);
 
         const register = new RegisterPage(page);
-        await page.goto(`${baseURL}route=account/register`);
+        await page.goto(`?route=account/register`);
         await register.enterFirstName("3b2VwwPAUdzDOdHBgTxucg8QYO21p8gb");
         await register.enterLastName(lastname);
         await register.enterEmail(email);
@@ -54,11 +54,11 @@ test.describe("Page object test for Success Register Account", async () => {
 })
 
 test.describe("Page object test for Error Register Account", async () => {
-    test("0 characters Register Account", async ({ page, baseURL }, testInfo) => {
+    test("0 characters Register Account", async ({ page }, testInfo) => {
         console.log('TITLE: ' + testInfo.title);
 
         const register = new RegisterPage(page);
-        await page.goto(`${baseURL}route=account/register`);
+        await page.goto(`?route=account/register`);
         await register.enterFirstName("");
         await register.enterLastName(lastname);
         await register.enterEmail(email);
@@ -72,11 +72,11 @@ test.describe("Page object test for Error Register Account", async () => {
         console.log('STATUS: ' + testInfo.status);
     })
 
-    test("33 characters Register Account", async ({ page, baseURL }, testInfo) => {
+    test("33 characters Register Account", async ({ page}, testInfo) => {
         console.log('TITLE: ' + testInfo.title);
 
         const register = new RegisterPage(page);
-        await page.goto(`${baseURL}route=account/register`);
+        await page.goto(`?route=account/register`);
         await register.enterFirstName("qBs6YHtsLCRRAUaVDpSlxktpQpv5w3wew");
         await register.enterLastName(lastname);
         await register.enterEmail(email);
@@ -90,11 +90,11 @@ test.describe("Page object test for Error Register Account", async () => {
         console.log('STATUS: ' + testInfo.status);
     })
 
-    test("Without E-Mail and Password Register Account", async ({ page, baseURL }, testInfo) => {
+    test("Without E-Mail and Password Register Account", async ({ page }, testInfo) => {
         console.log('TITLE: ' + testInfo.title);
 
         const register = new RegisterPage(page);
-        await page.goto(`${baseURL}route=account/register`);
+        await page.goto(`?route=account/register`);
         await register.enterFirstName("qBs6YHtsLCRRAUaVDpSlxktpQpv5w3we");
         await register.enterLastName(lastname);
         await register.enterTelephone(phone);

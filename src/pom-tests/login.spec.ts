@@ -7,30 +7,33 @@ dotenv.config({
 });
 export const email = process.env.POM_EMAIL;
 export const password = process.env.POM_PASSWORD;
+export const warningText = process.env.FIRST_WARNING
+export const warningTextsecond = process.env.SECOND_WARNING
+
 test.describe("Page object test for Login", async () => {
 
-    test("Correct Login", async ({ page, baseURL }) => {
+    test("Correct Login", async ({ page }) => {
+        await page.goto('?route=account/login');
         const login = new LoginPage(page);
-        await page.goto(`${baseURL}route=account/login`);
         await login.enterEmail(email);
         await login.enterLoginPassword(password);
         await login.clickLoginBtn();
         expect(await page.title()).toBe("My Account");
     })
 
-    test("Without email Login", async ({ page, baseURL }) => {
+    test("Without email Login", async ({ page }) => {
         const login = new LoginPage(page);
-        await page.goto(`${baseURL}route=account/login`);
+        await page.goto(`?route=account/login`);
         await login.enterLoginPassword(password);
         await login.clickLoginBtn();
-        await login.WarningSecond();
+        await login.warning(warningTextsecond);
     })
 
-    test("Without password Login", async ({ page, baseURL }) => {
+    test("Without password Login", async ({ page}) => {
         const login = new LoginPage(page);
-        await page.goto(`${baseURL}route=account/login`);
+        await page.goto(`?route=account/login`);
         await login.enterEmail(email);
         await login.clickLoginBtn();
-        await login.Warning();
+        await login.warning(warningText);
     })
 })
