@@ -199,4 +199,19 @@ Truthy values are all values that aren't 0, '' (empty string), false, null, NaN,
     
 ![image](https://user-images.githubusercontent.com/45335405/188291489-b8ad86dd-5d39-4db3-bbce-d433cba01850.png)
 
+***Playwright Allure Report***
 
+# https://www.npmjs.com/package/allure-playwright
+npm i allure-playwright
+
+![image](https://user-images.githubusercontent.com/45335405/192069362-e2328dae-4940-40b1-bf7a-0e99b94804b4.png)
+
+![image](https://user-images.githubusercontent.com/45335405/192069657-f08dc87f-bdc0-48aa-866d-34af44226288.png)
+
+# https://www.npmjs.com/package/allure-commandline
+npm i allure-commandline
+**For Open**
+
+![image](https://user-images.githubusercontent.com/45335405/192069979-aa99eedd-1b9a-4da2-af4f-f5be51a0811e.png)
+
+![image](https://user-images.githubusercontent.com/45335405/192069857-12651355-3d29-4e7b-a47d-a223f77f15e7.png)
