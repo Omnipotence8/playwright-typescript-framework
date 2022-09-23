@@ -1,0 +1,416 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework\\node_modules\\allure-playwright\\dist\\index.js",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.25.0",
+    "workers": 1,
+    "webServer": null,
+    "_watchMode": false,
+    "_webServers": [],
+    "_globalOutputDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_configDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_testGroupsCount": 3,
+    "_workerIsolation": "isolate-pools"
+  },
+  "suites": [
+    {
+      "title": "add-to-cart.spec.ts",
+      "file": "add-to-cart.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test demo",
+          "file": "add-to-cart.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add to cart test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8547,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "add-to-cart.spec.ts",
+              "line": 15,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test for Login",
+          "file": "login.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Correct Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3708,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 14,
+              "column": 5
+            },
+            {
+              "title": "Without email Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2501,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 23,
+              "column": 5
+            },
+            {
+              "title": "Without password Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2841,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 31,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "regitr.spec.ts",
+      "file": "regitr.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test for Success Register Account",
+          "file": "regitr.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Correct Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3926,
+                      "stdout": [
+                        {
+                          "text": "TITLE: Correct Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "regitr.spec.ts",
+              "line": 17,
+              "column": 5
+            },
+            {
+              "title": "32 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4346,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 32 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "regitr.spec.ts",
+              "line": 36,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "Page object test for Error Register Account",
+          "file": "regitr.spec.ts",
+          "line": 56,
+          "column": 6,
+          "specs": [
+            {
+              "title": "0 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3496,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 0 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "regitr.spec.ts",
+              "line": 57,
+              "column": 5
+            },
+            {
+              "title": "33 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4435,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 33 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "regitr.spec.ts",
+              "line": 75,
+              "column": 5
+            },
+            {
+              "title": "Without E-Mail and Password Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3839,
+                      "stdout": [
+                        {
+                          "text": "TITLE: Without E-Mail and Password Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "regitr.spec.ts",
+              "line": 93,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

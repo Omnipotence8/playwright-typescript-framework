@@ -19,8 +19,7 @@ declare global {
       First_Name: string;
       Last_Name: string;
       TELEPHONE: string;
-      FIRST_WARNING: string; 
-      SECOND_WARNING: string;
+      WARNING: string; 
     }
   }
 }

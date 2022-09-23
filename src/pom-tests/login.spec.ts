@@ -7,8 +7,7 @@ dotenv.config({
 });
 export const email = process.env.POM_EMAIL;
 export const password = process.env.POM_PASSWORD;
-export const warningText = process.env.FIRST_WARNING
-export const warningTextsecond = process.env.SECOND_WARNING
+export const warningText = process.env.WARNING
 
 test.describe("Page object test for Login", async () => {
 
@@ -26,7 +25,7 @@ test.describe("Page object test for Login", async () => {
         await page.goto(`?route=account/login`);
         await login.enterLoginPassword(password);
         await login.clickLoginBtn();
-        await login.warning(warningTextsecond);
+        await login.warning(warningText);
     })
 
     test("Without password Login", async ({ page}) => {
