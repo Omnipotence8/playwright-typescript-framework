@@ -215,3 +215,7 @@ npm i allure-commandline
 ![image](https://user-images.githubusercontent.com/45335405/192069979-aa99eedd-1b9a-4da2-af4f-f5be51a0811e.png)
 
 ![image](https://user-images.githubusercontent.com/45335405/192069857-12651355-3d29-4e7b-a47d-a223f77f15e7.png)
+ 
+    ![image](https://user-images.githubusercontent.com/45335405/192070181-e88bd8da-bba0-4aae-ad2f-28de7e5668bf.png)
+
+    
