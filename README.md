@@ -245,7 +245,7 @@ page.click() - click on an element on the page that matches the selector.
 
 **Grouping.** Group tests are conducted on the basis of common sense, and not just a given setting.
 
-# Playwright comes with a number of built-in fixtures that you can customize.
+### Playwright comes with a number of built-in fixtures that you can customize.
 
 fixtures.browser - generic browser instance (for worker);
 
