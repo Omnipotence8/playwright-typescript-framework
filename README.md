@@ -261,6 +261,6 @@ fixtures.page - Isolates the page (per test).
 You can use Test Fixtures in the drill down phase of testing, or Worker Fixtures to apply them at the workflow level (in all controlled tests).
 
 In this way, fixtures contribute to the provision of consistent and isolated testing environments in Playwright with inherent flexibility and amenity for customization.
-    
-    ![image](https://user-images.githubusercontent.com/45335405/193179308-791e35c2-0b1b-44c0-8fe2-ece94c3d148e.png)
+![image](https://user-images.githubusercontent.com/45335405/193179308-791e35c2-0b1b-44c0-8fe2-ece94c3d148e.png)
 
+https://playwright.dev/docs/test-fixtures
