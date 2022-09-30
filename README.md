@@ -223,8 +223,11 @@ Playwright Test is based on the concept of the test fixtures. Test fixtures are 
 Playwright Test looks at each test declaration, analyses the set of fixtures the test needs and prepares those fixtures specifically for the test. Values prepared by the fixtures are merged into a single object that is available to the test, hooks, annotations and other fixtures as a first parameter.
 
 test('my test', async ({ page }) => {
+    
   await page.goto('https://playwright.dev/');
+    
   await expect(page).toHaveTitle(/Playwright/);
+    
   await expect(page.locator('text=Get Started').first()).toHaveAttribute('href', '/docs/intro');
   
  The {page} argument provided in the test is an example of a test fixture. We will talk about fixtures in the next section.
