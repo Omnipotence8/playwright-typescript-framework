@@ -240,7 +240,7 @@ page.goto() - go to any page in the browser;
 
 page.click() - click on an element on the page that matches the selector.
 
-** Why fixture? Because they create a consistent environment (test repeatability) and provide effective isolation for the test being run, with the following benefits:**
+** Why fixture?** Because they create a consistent environment (test repeatability) and provide effective isolation for the test being run, with the following benefits:
 
 **Efficiency.** Run multiple tests in parallel, faster and with less memory usage.
 
@@ -261,3 +261,6 @@ fixtures.page - Isolates the page (per test).
 You can use Test Fixtures in the drill down phase of testing, or Worker Fixtures to apply them at the workflow level (in all controlled tests).
 
 In this way, fixtures contribute to the provision of consistent and isolated testing environments in Playwright with inherent flexibility and amenity for customization.
+    
+    ![image](https://user-images.githubusercontent.com/45335405/193179308-791e35c2-0b1b-44c0-8fe2-ece94c3d148e.png)
+
