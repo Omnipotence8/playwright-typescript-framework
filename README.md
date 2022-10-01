@@ -264,3 +264,9 @@ In this way, fixtures contribute to the provision of consistent and isolated tes
 ![image](https://user-images.githubusercontent.com/45335405/193179308-791e35c2-0b1b-44c0-8fe2-ece94c3d148e.png)
 
 https://playwright.dev/docs/test-fixtures
+    
+![image](https://user-images.githubusercontent.com/45335405/193375047-e635e3e0-288c-4513-95ef-6a595877e291.png)
+    
+![image](https://user-images.githubusercontent.com/45335405/193375455-7a65fc3e-b0b9-41eb-9cf8-f043e37d3f59.png)
+
+    
