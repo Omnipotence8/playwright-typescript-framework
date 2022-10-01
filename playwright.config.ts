@@ -1,7 +1,7 @@
 import { devices, PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testDir: './src/pom-tests',
+  testDir: './src/pom-test-fixture',
   use: {
     headless: false,
     screenshot: "only-on-failure",
