@@ -12,11 +12,11 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/test-results",
+        "outputDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "chromium",
-        "testDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
+        "testDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-tests",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -36,7 +36,7 @@
         }
       ],
       [
-        "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework\\node_modules\\allure-playwright\\dist\\index.js",
+        "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ],
       [
@@ -50,7 +50,7 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
+    "rootDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-tests",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -59,8 +59,8 @@
     "webServer": null,
     "_watchMode": false,
     "_webServers": [],
-    "_globalOutputDir": "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
-    "_configDir": "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_globalOutputDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_configDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
     "_testGroupsCount": 3,
     "_ignoreSnapshots": false,
     "_workerIsolation": "isolate-pools"
@@ -93,11 +93,11 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7949,
+                      "duration": 20162,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:45.732Z",
+                      "startTime": "2022-10-07T05:00:25.987Z",
                       "attachments": []
                     }
                   ],
@@ -123,7 +123,7 @@
         {
           "title": "Page object test for Login",
           "file": "login.spec.ts",
-          "line": 13,
+          "line": 12,
           "column": 6,
           "specs": [
             {
@@ -140,11 +140,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 4767,
+                      "duration": 18102,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:45.737Z",
+                      "startTime": "2022-10-07T05:00:25.973Z",
                       "attachments": []
                     }
                   ],
@@ -153,7 +153,7 @@
               ],
               "id": "41d3fd2474a19feb00a1-516423842e994a02a481",
               "file": "login.spec.ts",
-              "line": 15,
+              "line": 14,
               "column": 5
             },
             {
@@ -170,11 +170,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2964,
+                      "duration": 3145,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:51.925Z",
+                      "startTime": "2022-10-07T05:00:45.528Z",
                       "attachments": []
                     }
                   ],
@@ -183,7 +183,7 @@
               ],
               "id": "41d3fd2474a19feb00a1-b909475b9e35b10326fc",
               "file": "login.spec.ts",
-              "line": 24,
+              "line": 23,
               "column": 5
             },
             {
@@ -200,11 +200,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 3414,
+                      "duration": 3022,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:54.890Z",
+                      "startTime": "2022-10-07T05:00:48.675Z",
                       "attachments": []
                     }
                   ],
@@ -213,7 +213,7 @@
               ],
               "id": "41d3fd2474a19feb00a1-878f62e1e0fe7bad8112",
               "file": "login.spec.ts",
-              "line": 32,
+              "line": 31,
               "column": 5
             }
           ]
@@ -230,7 +230,7 @@
         {
           "title": "Page object test for Success Register Account",
           "file": "regitr.spec.ts",
-          "line": 16,
+          "line": 15,
           "column": 6,
           "specs": [
             {
@@ -247,7 +247,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4298,
+                      "duration": 4375,
                       "stdout": [
                         {
                           "text": "TITLE: Correct Register Account\n"
@@ -258,7 +258,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:55.187Z",
+                      "startTime": "2022-10-07T05:00:47.521Z",
                       "attachments": []
                     }
                   ],
@@ -267,7 +267,7 @@
               ],
               "id": "93e0768ac5926189aeee-25d7d2d3541b36e741fb",
               "file": "regitr.spec.ts",
-              "line": 18,
+              "line": 17,
               "column": 5
             },
             {
@@ -284,7 +284,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4608,
+                      "duration": 3711,
                       "stdout": [
                         {
                           "text": "TITLE: 32 characters Register Account\n"
@@ -295,7 +295,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:06:59.487Z",
+                      "startTime": "2022-10-07T05:00:51.898Z",
                       "attachments": []
                     }
                   ],
@@ -329,7 +329,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4607,
+                      "duration": 3865,
                       "stdout": [
                         {
                           "text": "TITLE: 0 characters Register Account\n"
@@ -340,7 +340,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:07:04.096Z",
+                      "startTime": "2022-10-07T05:00:55.611Z",
                       "attachments": []
                     }
                   ],
@@ -366,7 +366,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4811,
+                      "duration": 3516,
                       "stdout": [
                         {
                           "text": "TITLE: 33 characters Register Account\n"
@@ -377,7 +377,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:07:08.704Z",
+                      "startTime": "2022-10-07T05:00:59.478Z",
                       "attachments": []
                     }
                   ],
@@ -403,7 +403,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4405,
+                      "duration": 3871,
                       "stdout": [
                         {
                           "text": "TITLE: Without E-Mail and Password Register Account\n"
@@ -414,7 +414,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T04:07:13.516Z",
+                      "startTime": "2022-10-07T05:01:02.995Z",
                       "attachments": []
                     }
                   ],
