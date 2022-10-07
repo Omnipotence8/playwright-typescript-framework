@@ -3,7 +3,7 @@ import { devices, PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: './src/pom-test-fixture',
   use: {
-    headless: false,
+    headless: true,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     // baseURL: 'https://grinfer.com/',
