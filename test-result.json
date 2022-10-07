@@ -12,11 +12,11 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/test-results",
+        "outputDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "chromium",
-        "testDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
+        "testDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -36,7 +36,7 @@
         }
       ],
       [
-        "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework\\node_modules\\allure-playwright\\dist\\index.js",
+        "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ],
       [
@@ -50,7 +50,7 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "c:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
+    "rootDir": "C:/Users/lyudmyla.kalmykova/Projects/playwright-typescript-framework/src/pom-test-fixture",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -59,8 +59,8 @@
     "webServer": null,
     "_watchMode": false,
     "_webServers": [],
-    "_globalOutputDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
-    "_configDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_globalOutputDir": "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
+    "_configDir": "C:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
     "_testGroupsCount": 3,
     "_ignoreSnapshots": false,
     "_workerIsolation": "isolate-pools"
@@ -93,11 +93,11 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7575,
+                      "duration": 7949,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:24.010Z",
+                      "startTime": "2022-10-07T04:06:45.732Z",
                       "attachments": []
                     }
                   ],
@@ -140,11 +140,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 4702,
+                      "duration": 4767,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:24.004Z",
+                      "startTime": "2022-10-07T04:06:45.737Z",
                       "attachments": []
                     }
                   ],
@@ -170,11 +170,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 3046,
+                      "duration": 2964,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:30.151Z",
+                      "startTime": "2022-10-07T04:06:51.925Z",
                       "attachments": []
                     }
                   ],
@@ -200,11 +200,11 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 3341,
+                      "duration": 3414,
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:33.199Z",
+                      "startTime": "2022-10-07T04:06:54.890Z",
                       "attachments": []
                     }
                   ],
@@ -247,7 +247,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4814,
+                      "duration": 4298,
                       "stdout": [
                         {
                           "text": "TITLE: Correct Register Account\n"
@@ -258,7 +258,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:32.854Z",
+                      "startTime": "2022-10-07T04:06:55.187Z",
                       "attachments": []
                     }
                   ],
@@ -284,7 +284,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4383,
+                      "duration": 4608,
                       "stdout": [
                         {
                           "text": "TITLE: 32 characters Register Account\n"
@@ -295,7 +295,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:37.669Z",
+                      "startTime": "2022-10-07T04:06:59.487Z",
                       "attachments": []
                     }
                   ],
@@ -329,7 +329,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4342,
+                      "duration": 4607,
                       "stdout": [
                         {
                           "text": "TITLE: 0 characters Register Account\n"
@@ -340,7 +340,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:42.053Z",
+                      "startTime": "2022-10-07T04:07:04.096Z",
                       "attachments": []
                     }
                   ],
@@ -366,7 +366,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4688,
+                      "duration": 4811,
                       "stdout": [
                         {
                           "text": "TITLE: 33 characters Register Account\n"
@@ -377,7 +377,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:46.397Z",
+                      "startTime": "2022-10-07T04:07:08.704Z",
                       "attachments": []
                     }
                   ],
@@ -403,7 +403,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4272,
+                      "duration": 4405,
                       "stdout": [
                         {
                           "text": "TITLE: Without E-Mail and Password Register Account\n"
@@ -414,7 +414,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-10-07T03:55:51.086Z",
+                      "startTime": "2022-10-07T04:07:13.516Z",
                       "attachments": []
                     }
                   ],
