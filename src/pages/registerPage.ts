@@ -66,6 +66,8 @@ export default class RegisterPage {
         ])
     }
 
+    
+
     async WithoutDangers() { 
         await expect(this.page.locator (LocatWithoutDangers)).not.toBeVisible();
     }

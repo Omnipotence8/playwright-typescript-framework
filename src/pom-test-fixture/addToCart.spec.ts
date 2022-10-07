@@ -10,7 +10,7 @@ dotenv.config({
 export const email = process.env.POM_EMAIL;
 export const password = process.env.POM_PASSWORD;
 
-test.describe("Page object test demo", async () => {
+test.describe("Page object test", async () => {
 
     test("Add to cart test", async ({ page, loginPage, homePage, specialPage}) => {
         // const login = new LoginPage(page);

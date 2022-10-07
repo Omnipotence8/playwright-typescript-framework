@@ -61,46 +61,372 @@
     "_webServers": [],
     "_globalOutputDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
     "_configDir": "c:\\Users\\lyudmyla.kalmykova\\Projects\\playwright-typescript-framework",
-    "_testGroupsCount": 1,
+    "_testGroupsCount": 3,
     "_ignoreSnapshots": false,
     "_workerIsolation": "isolate-pools"
   },
   "suites": [
     {
-      "title": "test-1.spec.ts",
-      "file": "test-1.spec.ts",
+      "title": "addToCart.spec.ts",
+      "file": "addToCart.spec.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Page object test",
+          "file": "addToCart.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "chromium",
-              "results": [
+              "title": "Add to cart test",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 678,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2022-10-07T02:56:57.580Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7575,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:24.010Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "a1b2df80ffd2e8e27332-c72c272da1e01ce78bae",
+              "file": "addToCart.spec.ts",
+              "line": 15,
+              "column": 5
             }
-          ],
-          "id": "492d4a3e7e76c4aacf4a-34ab2a399aed0b8eb826",
-          "file": "test-1.spec.ts",
-          "line": 3,
-          "column": 1
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test for Login",
+          "file": "login.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Correct Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 4702,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:24.004Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-516423842e994a02a481",
+              "file": "login.spec.ts",
+              "line": 15,
+              "column": 5
+            },
+            {
+              "title": "Without email Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 3046,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:30.151Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-b909475b9e35b10326fc",
+              "file": "login.spec.ts",
+              "line": 24,
+              "column": 5
+            },
+            {
+              "title": "Without password Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 3341,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:33.199Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-878f62e1e0fe7bad8112",
+              "file": "login.spec.ts",
+              "line": 32,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "regitr.spec.ts",
+      "file": "regitr.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test for Success Register Account",
+          "file": "regitr.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Correct Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4814,
+                      "stdout": [
+                        {
+                          "text": "TITLE: Correct Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:32.854Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "93e0768ac5926189aeee-25d7d2d3541b36e741fb",
+              "file": "regitr.spec.ts",
+              "line": 18,
+              "column": 5
+            },
+            {
+              "title": "32 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4383,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 32 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:37.669Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "93e0768ac5926189aeee-3bb3255e5b6da7c715e4",
+              "file": "regitr.spec.ts",
+              "line": 36,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "Page object test for Error Register Account",
+          "file": "regitr.spec.ts",
+          "line": 56,
+          "column": 6,
+          "specs": [
+            {
+              "title": "0 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4342,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 0 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:42.053Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "93e0768ac5926189aeee-d147efd787fe753eb320",
+              "file": "regitr.spec.ts",
+              "line": 57,
+              "column": 5
+            },
+            {
+              "title": "33 characters Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4688,
+                      "stdout": [
+                        {
+                          "text": "TITLE: 33 characters Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:46.397Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "93e0768ac5926189aeee-ce8c190ac6900d3afaca",
+              "file": "regitr.spec.ts",
+              "line": 75,
+              "column": 5
+            },
+            {
+              "title": "Without E-Mail and Password Register Account",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4272,
+                      "stdout": [
+                        {
+                          "text": "TITLE: Without E-Mail and Password Register Account\n"
+                        },
+                        {
+                          "text": "STATUS: passed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-10-07T03:55:51.086Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "93e0768ac5926189aeee-051f39e70b08660022bb",
+              "file": "regitr.spec.ts",
+              "line": 93,
+              "column": 5
+            }
+          ]
         }
       ]
     }
