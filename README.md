@@ -1,6 +1,9 @@
 # playwright-typescript-framework
 What Microsoft Playwright is and how it works.
 
+![image](https://user-images.githubusercontent.com/45335405/189474858-92afe997-0f98-48f7-8a9e-91d696d8ef3a.png)
+
+
 Playwright by Microsoft did start as a fork of Puppeteer. Puppeteer is a node library to automate the chromium browsers with the JavaScript API
 
 --Capabilities:
@@ -196,4 +199,74 @@ Truthy values are all values that aren't 0, '' (empty string), false, null, NaN,
     
 ![image](https://user-images.githubusercontent.com/45335405/188291489-b8ad86dd-5d39-4db3-bbce-d433cba01850.png)
 
+***Playwright Allure Report***
 
+# https://www.npmjs.com/package/allure-playwright
+npm i allure-playwright
+
+![image](https://user-images.githubusercontent.com/45335405/192069362-e2328dae-4940-40b1-bf7a-0e99b94804b4.png)
+
+![image](https://user-images.githubusercontent.com/45335405/192069657-f08dc87f-bdc0-48aa-866d-34af44226288.png)
+
+# https://www.npmjs.com/package/allure-commandline
+npm i allure-commandline
+**For Open**
+
+![image](https://user-images.githubusercontent.com/45335405/192069979-aa99eedd-1b9a-4da2-af4f-f5be51a0811e.png)
+
+![image](https://user-images.githubusercontent.com/45335405/192069857-12651355-3d29-4e7b-a47d-a223f77f15e7.png)
+![image](https://user-images.githubusercontent.com/45335405/192070181-e88bd8da-bba0-4aae-ad2f-28de7e5668bf.png)
+
+## Fixtures ##
+Playwright Test is based on the concept of the test fixtures. Test fixtures are used to establish environment for each test, giving the test everything it needs and nothing else.
+
+Playwright Test looks at each test declaration, analyses the set of fixtures the test needs and prepares those fixtures specifically for the test. Values prepared by the fixtures are merged into a single object that is available to the test, hooks, annotations and other fixtures as a first parameter.
+
+test('my test', async ({ page }) => {
+    
+  await page.goto('https://playwright.dev/');
+    
+  await expect(page).toHaveTitle(/Playwright/);
+    
+  await expect(page.locator('text=Get Started').first()).toHaveAttribute('href', '/docs/intro');
+  
+ The {page} argument provided in the test is an example of a test fixture. We will talk about fixtures in the next section.
+
+For now, you can look at the documentation for the page class and see that it provides methods for interacting with a single browser tab and handling various events. For example:
+
+the page.locator() method is a representation of the element(s) on the page with fixed logic for retrieving it at the right moment in time;
+
+page.goto() - go to any page in the browser;
+
+page.click() - click on an element on the page that matches the selector.
+
+** Why fixture?** Because they create a consistent environment (test repeatability) and provide effective isolation for the test being run, with the following benefits:
+
+**Efficiency.** Run multiple tests in parallel, faster and with less memory usage.
+
+**Targeting.** Retry the tests that just failed without rerunning the entire suite.
+
+**Grouping.** Group tests are conducted on the basis of common sense, and not just a given setting.
+
+### Playwright comes with a number of built-in fixtures that you can customize.
+
+fixtures.browser - generic browser instance (for worker);
+
+fixtures.browserName - current launch (chromium, firefox or webkit);
+
+fixtures.context - isolates the browser context (for test);
+
+fixtures.page - Isolates the page (per test).
+
+You can use Test Fixtures in the drill down phase of testing, or Worker Fixtures to apply them at the workflow level (in all controlled tests).
+
+In this way, fixtures contribute to the provision of consistent and isolated testing environments in Playwright with inherent flexibility and amenity for customization.
+![image](https://user-images.githubusercontent.com/45335405/193179308-791e35c2-0b1b-44c0-8fe2-ece94c3d148e.png)
+
+https://playwright.dev/docs/test-fixtures
+    
+![image](https://user-images.githubusercontent.com/45335405/193375047-e635e3e0-288c-4513-95ef-6a595877e291.png)
+    
+![image](https://user-images.githubusercontent.com/45335405/193375455-7a65fc3e-b0b9-41eb-9cf8-f043e37d3f59.png)
+
+    
